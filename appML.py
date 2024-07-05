@@ -103,7 +103,7 @@ if st.button('Forecast'):
     plt.grid(True)
     st.pyplot(plt)
 
-    # Download button for CSV
+    # Option to download as CSV
     csv = forecast_df.to_csv(index=False)
     st.download_button(
         label="Download forecast as CSV",
